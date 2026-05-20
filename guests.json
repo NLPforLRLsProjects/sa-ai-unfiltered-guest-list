@@ -1,0 +1,586 @@
+[
+  {
+    "source_no": "1",
+    "title": "Ms.",
+    "name": "Olwethu Ketsekile",
+    "organisation": "IMbekoYethu Consultancy and advisory services",
+    "designation": "Chief Executive Officerr",
+    "display_no": 1
+  },
+  {
+    "source_no": "2",
+    "title": "Dr.",
+    "name": "Tshifhiwa Maumela",
+    "organisation": "ICASA",
+    "designation": "Councillor",
+    "display_no": 2
+  },
+  {
+    "source_no": "3",
+    "title": "Mr.",
+    "name": "Mandlakayise Thabethe",
+    "organisation": "Absa",
+    "designation": "Lead Technology",
+    "display_no": 3
+  },
+  {
+    "source_no": "4",
+    "title": "Prof.",
+    "name": "Antonio Pooe",
+    "organisation": "Surveyfiesta",
+    "designation": "Director",
+    "display_no": 4
+  },
+  {
+    "source_no": "5",
+    "title": "Mr.",
+    "name": "Mogorosi Solly Monama",
+    "organisation": "Struggles Descartes (Pty) Ltd",
+    "designation": "Managing Director",
+    "display_no": 5
+  },
+  {
+    "source_no": "6",
+    "title": "Prof.",
+    "name": "Mpho Primus",
+    "organisation": "Institute for Artificial Intelligent Systems",
+    "designation": "Co-Director",
+    "display_no": 6
+  },
+  {
+    "source_no": "7",
+    "title": "Mr.",
+    "name": "Mothibi Ramusi",
+    "organisation": "ICASA",
+    "designation": "Chairperson",
+    "display_no": 7
+  },
+  {
+    "source_no": "8",
+    "title": "Mr.",
+    "name": "John Bosco Arends",
+    "organisation": "Chartered CIO Council",
+    "designation": "Chairperson",
+    "display_no": 8
+  },
+  {
+    "source_no": "9",
+    "title": "Dr.",
+    "name": "Thabo Lehlokoe",
+    "organisation": "Tafari Capital",
+    "designation": "Chairman",
+    "display_no": 9
+  },
+  {
+    "source_no": "10",
+    "title": "Mrs.",
+    "name": "Nokuthula Nokky Ndlovu",
+    "organisation": "Black Management Forum",
+    "designation": "Board member",
+    "display_no": 10
+  },
+  {
+    "source_no": "11",
+    "title": "Mrs.",
+    "name": "Mamela Luthuli",
+    "organisation": "Takenote group of companies",
+    "designation": "Founder and Chief Executive Officerr",
+    "display_no": 11
+  },
+  {
+    "source_no": "12",
+    "title": "Dr.",
+    "name": "Cyril Baloyi",
+    "organisation": "Cyril B Group",
+    "designation": "Director",
+    "display_no": 12
+  },
+  {
+    "source_no": "13",
+    "title": "Dr.",
+    "name": "Rendani Mamphiswana",
+    "organisation": "iCatalysis Hub",
+    "designation": "Innovation Director",
+    "display_no": 13
+  },
+  {
+    "source_no": "14",
+    "title": "Adv.",
+    "name": "Lufuno T Tshikalange",
+    "organisation": "Orizur Consulting Enterprise",
+    "designation": "Founder and Director",
+    "display_no": 14
+  },
+  {
+    "source_no": "15",
+    "title": "Mr.",
+    "name": "Matodzi Ratshimbilani",
+    "organisation": "MVR Attorneys",
+    "designation": "Managing Director",
+    "display_no": 15
+  },
+  {
+    "source_no": "16",
+    "title": "Ms.",
+    "name": "Jeanette Morwane",
+    "organisation": "DCDT",
+    "designation": "Acting DDG",
+    "display_no": 16
+  },
+  {
+    "source_no": "17",
+    "title": "Mr.",
+    "name": "Rendani Mutheiwana",
+    "organisation": "Department of Gauteng EGOV",
+    "designation": "Chief Director Strategic Management",
+    "display_no": 17
+  },
+  {
+    "source_no": "18",
+    "title": "Mr.",
+    "name": "Dikgang Moopeloa",
+    "organisation": "Zonke-Unicode",
+    "designation": "Managing Director",
+    "display_no": 18
+  },
+  {
+    "source_no": "19",
+    "title": "Ms.",
+    "name": "Veronica Motloutsi",
+    "organisation": "SEDFA (Small Enterprise Development Finance Agency)",
+    "designation": "Group Executive: Digital Transformation and Innovation",
+    "display_no": 19
+  },
+  {
+    "source_no": "20",
+    "title": "Prof.",
+    "name": "Greg Serandos",
+    "organisation": "African Academy of AI",
+    "designation": "Chief Executive Officerr",
+    "display_no": 20
+  },
+  {
+    "source_no": "21",
+    "title": "Mr.",
+    "name": "Dan Ramahotswa",
+    "organisation": "OpenText",
+    "designation": "Senior Account Executive",
+    "display_no": 21
+  },
+  {
+    "source_no": "22",
+    "title": "Dr.",
+    "name": "Stanley Mgobansimbi Mpofu",
+    "organisation": "Wits University",
+    "designation": "Chief Information Officer",
+    "display_no": 22
+  },
+  {
+    "source_no": "23",
+    "title": "Dr.",
+    "name": "Brenda Didi",
+    "organisation": "Momentum Group",
+    "designation": "Chief Risk Officer",
+    "display_no": 23
+  },
+  {
+    "source_no": "24",
+    "title": "Dr.",
+    "name": "Phathiswa Magopeni",
+    "organisation": "Press Council of South Africa",
+    "designation": "Executive Director",
+    "display_no": 24
+  },
+  {
+    "source_no": "25",
+    "title": "Mr.",
+    "name": "Pandelani Munyai",
+    "organisation": "Transnet",
+    "designation": "Group Chief Information Officer",
+    "display_no": 25
+  },
+  {
+    "source_no": "26",
+    "title": "Ms.",
+    "name": "Marilyn White",
+    "organisation": "Soma Solutions",
+    "designation": "Chief Executive Officerr",
+    "display_no": 26
+  },
+  {
+    "source_no": "27",
+    "title": "Ms.",
+    "name": "Poppy Tshabalala",
+    "organisation": "National Lotteries Commission",
+    "designation": "Chief Information Officer",
+    "display_no": 27
+  },
+  {
+    "source_no": "28",
+    "title": "Mr.",
+    "name": "Abraham Mahlangu",
+    "organisation": "SASSA",
+    "designation": "Chief Information Officer",
+    "display_no": 28
+  },
+  {
+    "source_no": "29",
+    "title": "Mr.",
+    "name": "Denice Manganye",
+    "organisation": "E-SEK TECHNOLOGY SOLUTIONS",
+    "designation": "Chief Executive Officerr",
+    "display_no": 29
+  },
+  {
+    "source_no": "30",
+    "title": "Ms.",
+    "name": "Faith Burn",
+    "organisation": "Land agricultural and development bank",
+    "designation": "Chief technology and operations officer",
+    "display_no": 30
+  },
+  {
+    "source_no": "31",
+    "title": "Ms.",
+    "name": "Unathi Mtya",
+    "organisation": "Technology & Digital Transformation Executive",
+    "designation": "Independent",
+    "display_no": 31
+  },
+  {
+    "source_no": "32",
+    "title": "Ms.",
+    "name": "Phokeng Mogase",
+    "organisation": "Financial Sector Conduct Authority (FSCA)",
+    "designation": "Chief Information and Digital Officer",
+    "display_no": 32
+  },
+  {
+    "source_no": "33",
+    "title": "Dr.",
+    "name": "H.E. Amb Lavina Ramkissoon",
+    "organisation": "African Union",
+    "designation": "Ambassador and Co-Chair",
+    "display_no": 33
+  },
+  {
+    "source_no": "34",
+    "title": "Mrs.",
+    "name": "Dillo Lehlokoe",
+    "organisation": "FIBRETRONIC SALES",
+    "designation": "Chief Executive Officerr",
+    "display_no": 34
+  },
+  {
+    "source_no": "35",
+    "title": "Ms.",
+    "name": "Pulana Ngwasheng",
+    "organisation": "Zeda Limited (Avis)",
+    "designation": "Chief Information Officer",
+    "display_no": 35
+  },
+  {
+    "source_no": "36",
+    "title": "Mrs.",
+    "name": "Sophy Moumakoe",
+    "organisation": "Exxaro",
+    "designation": "Chief Information Officer",
+    "display_no": 36
+  },
+  {
+    "source_no": "37",
+    "title": "Dr.",
+    "name": "Mukovhe Masutha",
+    "organisation": "Centre for Emerging Researchers",
+    "designation": "Head: Research, Strategy and Advisory Services",
+    "display_no": 37
+  },
+  {
+    "source_no": "38",
+    "title": "Mrs.",
+    "name": "Vuyokazi Menye",
+    "organisation": "SANRAL",
+    "designation": "Chief Information Officer",
+    "display_no": 38
+  },
+  {
+    "source_no": "39",
+    "title": "Ms.",
+    "name": "Veronica Motloutsi",
+    "organisation": "SEDFA",
+    "designation": "Group Executive",
+    "display_no": 39
+  },
+  {
+    "source_no": "40",
+    "title": "Ms.",
+    "name": "Makano Mosidi",
+    "organisation": "PIC SOC LTD",
+    "designation": "Chief Technology Officer",
+    "display_no": 40
+  },
+  {
+    "source_no": "41",
+    "title": "Mr.",
+    "name": "Alfred Mohlala",
+    "organisation": "Department of Public Service and Administration",
+    "designation": "Director: ICT Security",
+    "display_no": 41
+  },
+  {
+    "source_no": "42",
+    "title": "Mr.",
+    "name": "Butiki Shabangu",
+    "organisation": "Oracle Corporation SA",
+    "designation": "Public Sector Director - Database Platform and Cloud Infrastructure",
+    "display_no": 42
+  },
+  {
+    "source_no": "43",
+    "title": "Dr.",
+    "name": "Thembekile Mayayise",
+    "organisation": "University of the Witwatersrand",
+    "designation": "Senior Lecturer",
+    "display_no": 43
+  },
+  {
+    "source_no": "44",
+    "title": "Mr.",
+    "name": "Thato Matsipe",
+    "organisation": "North West Office of the Premier",
+    "designation": "Chief Director",
+    "display_no": 44
+  },
+  {
+    "source_no": "45",
+    "title": "Ms",
+    "name": "Nazareen Ebrahim",
+    "organisation": "Naz Consulting International",
+    "designation": "Founder and Principal Consultant",
+    "display_no": 45
+  },
+  {
+    "source_no": "46",
+    "title": "Mr.",
+    "name": "Gaitsewe Lenepa",
+    "organisation": "Beyond Face Value",
+    "designation": "Chief Executive Officerr",
+    "display_no": 46
+  },
+  {
+    "source_no": "47",
+    "title": "Dr.",
+    "name": "Tshepo Feela",
+    "organisation": "National Planning Commission",
+    "designation": "Commissioner",
+    "display_no": 47
+  },
+  {
+    "source_no": "48",
+    "title": "Prof.",
+    "name": "Rajesh Mahabeer",
+    "organisation": "Trilord Consulting (Pty) Ltd",
+    "designation": "Chief Executive Officerr",
+    "display_no": 48
+  },
+  {
+    "source_no": "50",
+    "title": "Mr.",
+    "name": "Zwelithini Gabela",
+    "organisation": "South African Police Service",
+    "designation": "Major General",
+    "display_no": 49
+  },
+  {
+    "source_no": "51",
+    "title": "Prof.",
+    "name": "Carl Marnewick",
+    "organisation": "University of Johannesburg",
+    "designation": "Professor in IT",
+    "display_no": 50
+  },
+  {
+    "source_no": "52",
+    "title": "Mr.",
+    "name": "Rendani Ramabulana",
+    "organisation": "Singo Network",
+    "designation": "Director",
+    "display_no": 51
+  },
+  {
+    "source_no": "53",
+    "title": "Mr.",
+    "name": "Eldrid Jordaan",
+    "organisation": "Eldrid Jordaan Foundation",
+    "designation": "Executive Chairman",
+    "display_no": 52
+  },
+  {
+    "source_no": "54",
+    "title": "Ms",
+    "name": "Nomvuyiso Batyi",
+    "organisation": "Association of Comms and Technology",
+    "designation": "Chief Executive Officer",
+    "display_no": 53
+  },
+  {
+    "source_no": "55",
+    "title": "Mr.",
+    "name": "Ali Tlabela",
+    "organisation": "AI Networks Pty Ltd",
+    "designation": "Director & Owner",
+    "display_no": 54
+  },
+  {
+    "source_no": "56",
+    "title": "Dr.",
+    "name": "Mark Nasila",
+    "organisation": "FirstRand Group",
+    "designation": "Chief Data and Analytics Officer - AI Strategy",
+    "display_no": 55
+  },
+  {
+    "source_no": "57",
+    "title": "Dr.",
+    "name": "Mmaki Jantjies",
+    "organisation": "Telkom",
+    "designation": "Group Executive Innovation and Transformation",
+    "display_no": 56
+  },
+  {
+    "source_no": "58",
+    "title": "Ms",
+    "name": "Tumelo Zwane",
+    "organisation": "Special Investigating Unit/ Department of Justice and Constitutional Development",
+    "designation": "Chief Information Officer",
+    "display_no": 57
+  },
+  {
+    "source_no": "59",
+    "title": "Dr.",
+    "name": "Setumo Mohapi",
+    "organisation": "Impact Tech",
+    "designation": "Director",
+    "display_no": 58
+  },
+  {
+    "source_no": "60",
+    "title": "Dr.",
+    "name": "Carl Heinz Uys",
+    "organisation": "Cyberspace Protection",
+    "designation": "Co-Founder",
+    "display_no": 59
+  },
+  {
+    "source_no": "61",
+    "title": "Mr.",
+    "name": "Ashley Sanichar",
+    "organisation": "Oracle",
+    "designation": "Country Leader/MD",
+    "display_no": 60
+  },
+  {
+    "source_no": "62",
+    "title": "Mr.",
+    "name": "Patrick Le Roux",
+    "organisation": "Venture Labs",
+    "designation": "Founder",
+    "display_no": 61
+  },
+  {
+    "source_no": "63",
+    "title": "Prof.",
+    "name": "Isolde Lubbe",
+    "organisation": "UJ SCiiS|Dep of Marketing",
+    "designation": "Head of Department",
+    "display_no": 62
+  },
+  {
+    "source_no": "64",
+    "title": "Ms",
+    "name": "Wendy Tembedza",
+    "organisation": "Webber Wentzel",
+    "designation": "Partner",
+    "display_no": 63
+  },
+  {
+    "source_no": "65",
+    "title": "Prof.",
+    "name": "Stella Bvuma",
+    "organisation": "UJ SCiiS",
+    "designation": "Director",
+    "display_no": 64
+  },
+  {
+    "source_no": "66",
+    "title": "Dr.",
+    "name": "Sthembiso Khumalo",
+    "organisation": "UJ SCiiS | IKM",
+    "designation": "Head of Department",
+    "display_no": 65
+  },
+  {
+    "source_no": "67",
+    "title": "Dr.",
+    "name": "Kagiso Mabe",
+    "organisation": "UJ SCiiS | IKM",
+    "designation": "Deputy Head of Department",
+    "display_no": 66
+  },
+  {
+    "source_no": "68",
+    "title": "Mr.",
+    "name": "Ronny Mabokela",
+    "organisation": "UJ SCiiS | Technopreneurship Centre",
+    "designation": "Deputy Head of Centre|DHoD",
+    "display_no": 67
+  },
+  {
+    "source_no": "69",
+    "title": "Mr.",
+    "name": "Rodney de Koch",
+    "organisation": "MIT|UJ",
+    "designation": "Advisory Board Member",
+    "display_no": 68
+  },
+  {
+    "source_no": "70",
+    "title": "Mr",
+    "name": "Ike Phaahla",
+    "organisation": "Radio2000",
+    "designation": "Host and Communication Specialist",
+    "display_no": 69
+  },
+  {
+    "source_no": "71",
+    "title": "Adv.",
+    "name": "Dirontsho Mohale",
+    "organisation": "Baakedi Professional Practice",
+    "designation": "CEO , Chief Privacy, Legal & Compliance",
+    "display_no": 70
+  },
+  {
+    "source_no": "72",
+    "title": "Prof.",
+    "name": "Josef Langerman",
+    "organisation": "UJ SCiiS | AIS & CADS",
+    "designation": "Head of Centre|DHoD",
+    "display_no": 71
+  },
+  {
+    "source_no": "73",
+    "title": "Ms",
+    "name": "Heather Irvine",
+    "organisation": "Bowmans",
+    "designation": "Regulatory, Technology, Competition Lead and Partner",
+    "display_no": 72
+  },
+  {
+    "source_no": "74",
+    "title": "Mr.",
+    "name": "Victor Thobakgale",
+    "organisation": "African Rainbow Minerals",
+    "designation": "Technology Operational lead",
+    "display_no": 73
+  }
+]
