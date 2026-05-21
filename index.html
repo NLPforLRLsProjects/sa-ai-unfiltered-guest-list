@@ -3,49 +3,527 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SA AI Unfiltered: Executive Roundtable | Guest List</title>
+
+  <title>SA AI Unfiltered Executive Roundtable | Guest List</title>
+
   <style>
-    :root { --orange:#ee5b16; --black:#050505; --text:#1f2933; --line:#e4e4e4; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--text); background:radial-gradient(circle at 10% 12%, rgba(238,91,22,.09), transparent 18%),linear-gradient(135deg,#fff,#f4f4f4); }
-    .topbar { background:var(--black); color:white; border-bottom:6px solid var(--orange); position:relative; overflow:hidden; }
-    .topbar::after { content:""; position:absolute; right:0; top:0; bottom:0; width:300px; background:radial-gradient(circle at 30% 25%, transparent 0 18px,#fff 19px 21px,transparent 22px),radial-gradient(circle at 65% 68%,transparent 0 30px,var(--orange) 31px 38px,transparent 39px),linear-gradient(135deg,transparent,rgba(238,91,22,.3)); opacity:.8; }
-    .hero { max-width:1180px; margin:0 auto; padding:34px 22px 32px; position:relative; z-index:1; display:grid; grid-template-columns:130px 1fr; gap:22px; align-items:center; }
-    .logoBox { width:116px; height:116px; background:var(--orange); display:flex; align-items:center; justify-content:center; border-radius:4px; box-shadow:0 12px 28px rgba(0,0,0,.28); overflow:hidden; }
-    .logoBox img { width:100%; height:100%; object-fit:cover; object-position:right top; }
-    h1 { margin:0; font-size:clamp(1.7rem,4vw,3.2rem); letter-spacing:.04em; line-height:1.05; text-transform:uppercase; }
-    .sub { color:var(--orange); font-size:clamp(1rem,2vw,1.45rem); margin-top:10px; letter-spacing:.02em; text-transform:uppercase; }
-    .meta { margin-top:18px; display:flex; flex-wrap:wrap; gap:12px; font-size:.98rem; color:#e7e7e7; }
-    .pill { border:1px solid rgba(255,255,255,.22); padding:8px 12px; border-radius:999px; background:rgba(255,255,255,.08); }
-    main { max-width:1180px; margin:26px auto 56px; padding:0 22px; }
-    .notice { background:white; border-left:6px solid var(--orange); padding:18px 20px; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,.08); line-height:1.55; margin-bottom:20px; }
-    .toolbar { display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:center; margin:20px 0; }
-    .search { flex:1 1 330px; padding:14px 16px; border:1px solid #d0d5dd; border-radius:10px; font-size:1rem; outline:none; background:white; }
-    .count { font-weight:700; color:#151515; background:#fff; border:1px solid var(--line); padding:12px 14px; border-radius:10px; }
-    .tableWrap { overflow-x:auto; background:white; border-radius:14px; box-shadow:0 10px 32px rgba(0,0,0,.1); border:1px solid var(--line); }
-    table { width:100%; border-collapse:collapse; min-width:820px; }
-    thead th { background:var(--orange); color:#fff; text-align:left; padding:14px 12px; font-size:.92rem; letter-spacing:.03em; text-transform:uppercase; position:sticky; top:0; z-index:2; }
-    tbody td { padding:12px; border-bottom:1px solid var(--line); vertical-align:top; line-height:1.35; }
-    tbody tr:hover { background:#fff7f2; }
-    .no { width:62px; text-align:center; font-weight:700; color:#566; }
-    .title { width:72px; }
-    .name { font-weight:700; color:#111827; }
-    .footer { text-align:center; color:#666; padding:28px 16px 40px; font-size:.92rem; }
-    @media (max-width:720px) { .hero{grid-template-columns:1fr}.logoBox{width:86px;height:86px}.topbar::after{width:140px;opacity:.35} table{min-width:0} thead{display:none} tbody tr{display:block;padding:12px;border-bottom:1px solid var(--line)} tbody td{display:grid;grid-template-columns:115px 1fr;border:0;padding:6px 0} tbody td::before{font-weight:700;color:#5b6470} tbody td:nth-child(1)::before{content:'No.'} tbody td:nth-child(2)::before{content:'Title'} tbody td:nth-child(3)::before{content:'Name'} tbody td:nth-child(4)::before{content:'Organisation'} tbody td:nth-child(5)::before{content:'Designation'} .no{width:auto;text-align:left} }
+    :root {
+      --uj-orange: #f05a1a;
+      --dark: #111111;
+      --light-grey: #f2f2f2;
+      --mid-grey: #666666;
+      --white: #ffffff;
+      --border: #dddddd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light-grey);
+      color: var(--dark);
+    }
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      min-height: 100vh;
+    }
+
+    .guest-section {
+      padding: 28px 34px;
+      background:
+        linear-gradient(rgba(245, 245, 245, 0.94), rgba(245, 245, 245, 0.94)),
+        url("assets/Picture1.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .branding-section {
+      background: #000;
+      min-height: 100vh;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+    }
+
+    .branding-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .top-bar {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr) 96px;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .logo-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 8px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 76px;
+      width: 96px;
+    }
+
+    .partner-logo {
+      height: 54px;
+      width: auto;
+      max-width: 80px;
+      display: block;
+    }
+
+    .uj-logo {
+      height: 60px;
+      width: auto;
+      max-width: 80px;
+      display: block;
+    }
+
+    .event-heading {
+      min-width: 0;
+    }
+
+    .event-label {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--uj-orange);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    h2 {
+      margin: 8px 0 0;
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    .theme-line {
+      margin-top: 10px;
+      font-size: 18px;
+      color: var(--uj-orange);
+      font-weight: 600;
+    }
+
+    .info-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 22px 0;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.9);
+      border-left: 6px solid var(--uj-orange);
+      border-radius: 10px;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.06);
+      font-size: 14px;
+      color: #333333;
+    }
+
+    .info-strip span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .note {
+      margin: 16px 0 20px;
+      max-width: 980px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #444444;
+    }
+
+    .table-card {
+      background: var(--white);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e5e5e5;
+    }
+
+    .table-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .table-header strong {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .count-badge {
+      background: var(--uj-orange);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .search-row {
+      padding: 14px 20px;
+      background: #fafafa;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .search-row input {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid #cccccc;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-row input:focus {
+      border-color: var(--uj-orange);
+      box-shadow: 0 0 0 3px rgba(240, 90, 26, 0.12);
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 920px;
+      font-size: 14px;
+    }
+
+    thead th {
+      background: var(--uj-orange);
+      color: var(--white);
+      padding: 11px 10px;
+      text-align: left;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    tbody td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      color: #222222;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f7f7f7;
+    }
+
+    tbody tr:hover {
+      background: #fff3ed;
+    }
+
+    .no-col {
+      width: 52px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--uj-orange);
+    }
+
+    .title-col {
+      width: 72px;
+      white-space: nowrap;
+    }
+
+    .name-col {
+      min-width: 230px;
+      font-weight: 700;
+    }
+
+    .org-col {
+      min-width: 300px;
+    }
+
+    .designation-col {
+      min-width: 300px;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: var(--mid-grey);
+    }
+
+    @media screen and (max-width: 1000px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .branding-section {
+        position: relative;
+        min-height: 260px;
+        height: 260px;
+        order: -1;
+      }
+
+      .top-bar {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .logo-card.logo-left {
+        order: 1;
+      }
+
+      .event-heading {
+        order: 2;
+      }
+
+      .logo-card.logo-right {
+        order: 3;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .guest-section {
+        padding: 22px;
+      }
+    }
+
+    @media print {
+      .branding-section,
+      .search-row {
+        display: none;
+      }
+
+      .page-layout {
+        display: block;
+      }
+
+      .guest-section {
+        padding: 10px;
+        background: white;
+      }
+
+      .table-card {
+        box-shadow: none;
+        border: 1px solid #999;
+      }
+
+      table {
+        font-size: 11px;
+        min-width: 100%;
+      }
+
+      thead th {
+        background: #eeeeee !important;
+        color: #000000 !important;
+      }
+    }
   </style>
 </head>
+
 <body>
-<section class="topbar"><div class="hero"><div class="logoBox"><img src="assets/Picture3.png" alt="Event branding"></div><div><h1>SA Artificial Intelligence Unfiltered</h1><div class="sub">Executive Roundtable</div><div class="meta"><span class="pill">Policies • Ethics • Innovation That Actually Works</span><span class="pill">26 May 2026</span><span class="pill">STH Kerzner, UJ Bunting Road Campus</span></div></div></div></section>
-<main><div class="notice"><strong>Public Guest List</strong><br>This list displays confirmed delegates for networking and event participation purposes. Contact details, email addresses, PA details, ticket numbers and private registration information are not displayed.</div><div class="toolbar"><input class="search" id="search" type="search" placeholder="Search by name, organisation or designation..." aria-label="Search guest list"><div class="count" id="count">Loading guests...</div></div><div class="tableWrap"><table><thead><tr><th>No.</th><th>Title</th><th>Full name & surname</th><th>Organisation / Institution</th><th>Designation</th></tr></thead><tbody id="guestRows"></tbody></table></div></main><div class="footer">School of Consumer Intelligence and Information Systems • University of Johannesburg</div>
-<script>
-const guests = [{"source_no": "1", "title": "Ms.", "name": "Olwethu Ketsekile", "organisation": "IMbekoYethu Consultancy and advisory services", "designation": "Chief Executive Officerr", "display_no": 1}, {"source_no": "2", "title": "Dr.", "name": "Tshifhiwa Maumela", "organisation": "ICASA", "designation": "Councillor", "display_no": 2}, {"source_no": "3", "title": "Mr.", "name": "Mandlakayise Thabethe", "organisation": "Absa", "designation": "Lead Technology", "display_no": 3}, {"source_no": "4", "title": "Prof.", "name": "Antonio Pooe", "organisation": "Surveyfiesta", "designation": "Director", "display_no": 4}, {"source_no": "5", "title": "Mr.", "name": "Mogorosi Solly Monama", "organisation": "Struggles Descartes (Pty) Ltd", "designation": "Managing Director", "display_no": 5}, {"source_no": "6", "title": "Prof.", "name": "Mpho Primus", "organisation": "Institute for Artificial Intelligent Systems", "designation": "Co-Director", "display_no": 6}, {"source_no": "7", "title": "Mr.", "name": "Mothibi Ramusi", "organisation": "ICASA", "designation": "Chairperson", "display_no": 7}, {"source_no": "8", "title": "Mr.", "name": "John Bosco Arends", "organisation": "Chartered CIO Council", "designation": "Chairperson", "display_no": 8}, {"source_no": "9", "title": "Dr.", "name": "Thabo Lehlokoe", "organisation": "Tafari Capital", "designation": "Chairman", "display_no": 9}, {"source_no": "10", "title": "Mrs.", "name": "Nokuthula Nokky Ndlovu", "organisation": "Black Management Forum", "designation": "Board member", "display_no": 10}, {"source_no": "11", "title": "Mrs.", "name": "Mamela Luthuli", "organisation": "Takenote group of companies", "designation": "Founder and Chief Executive Officerr", "display_no": 11}, {"source_no": "12", "title": "Dr.", "name": "Cyril Baloyi", "organisation": "Cyril B Group", "designation": "Director", "display_no": 12}, {"source_no": "13", "title": "Dr.", "name": "Rendani Mamphiswana", "organisation": "iCatalysis Hub", "designation": "Innovation Director", "display_no": 13}, {"source_no": "14", "title": "Adv.", "name": "Lufuno T Tshikalange", "organisation": "Orizur Consulting Enterprise", "designation": "Founder and Director", "display_no": 14}, {"source_no": "15", "title": "Mr.", "name": "Matodzi Ratshimbilani", "organisation": "MVR Attorneys", "designation": "Managing Director", "display_no": 15}, {"source_no": "16", "title": "Ms.", "name": "Jeanette Morwane", "organisation": "DCDT", "designation": "Acting DDG", "display_no": 16}, {"source_no": "17", "title": "Mr.", "name": "Rendani Mutheiwana", "organisation": "Department of Gauteng EGOV", "designation": "Chief Director Strategic Management", "display_no": 17}, {"source_no": "18", "title": "Mr.", "name": "Dikgang Moopeloa", "organisation": "Zonke-Unicode", "designation": "Managing Director", "display_no": 18}, {"source_no": "19", "title": "Ms.", "name": "Veronica Motloutsi", "organisation": "SEDFA (Small Enterprise Development Finance Agency)", "designation": "Group Executive: Digital Transformation and Innovation", "display_no": 19}, {"source_no": "20", "title": "Prof.", "name": "Greg Serandos", "organisation": "African Academy of AI", "designation": "Chief Executive Officerr", "display_no": 20}, {"source_no": "21", "title": "Mr.", "name": "Dan Ramahotswa", "organisation": "OpenText", "designation": "Senior Account Executive", "display_no": 21}, {"source_no": "22", "title": "Dr.", "name": "Stanley Mgobansimbi Mpofu", "organisation": "Wits University", "designation": "Chief Information Officer", "display_no": 22}, {"source_no": "23", "title": "Dr.", "name": "Brenda Didi", "organisation": "Momentum Group", "designation": "Chief Risk Officer", "display_no": 23}, {"source_no": "24", "title": "Dr.", "name": "Phathiswa Magopeni", "organisation": "Press Council of South Africa", "designation": "Executive Director", "display_no": 24}, {"source_no": "25", "title": "Mr.", "name": "Pandelani Munyai", "organisation": "Transnet", "designation": "Group Chief Information Officer", "display_no": 25}, {"source_no": "26", "title": "Ms.", "name": "Marilyn White", "organisation": "Soma Solutions", "designation": "Chief Executive Officerr", "display_no": 26}, {"source_no": "27", "title": "Ms.", "name": "Poppy Tshabalala", "organisation": "National Lotteries Commission", "designation": "Chief Information Officer", "display_no": 27}, {"source_no": "28", "title": "Mr.", "name": "Abraham Mahlangu", "organisation": "SASSA", "designation": "Chief Information Officer", "display_no": 28}, {"source_no": "29", "title": "Mr.", "name": "Denice Manganye", "organisation": "E-SEK TECHNOLOGY SOLUTIONS", "designation": "Chief Executive Officerr", "display_no": 29}, {"source_no": "30", "title": "Ms.", "name": "Faith Burn", "organisation": "Land agricultural and development bank", "designation": "Chief technology and operations officer", "display_no": 30}, {"source_no": "31", "title": "Ms.", "name": "Unathi Mtya", "organisation": "Technology & Digital Transformation Executive", "designation": "Independent", "display_no": 31}, {"source_no": "32", "title": "Ms.", "name": "Phokeng Mogase", "organisation": "Financial Sector Conduct Authority (FSCA)", "designation": "Chief Information and Digital Officer", "display_no": 32}, {"source_no": "33", "title": "Dr.", "name": "H.E. Amb Lavina Ramkissoon", "organisation": "African Union", "designation": "Ambassador and Co-Chair", "display_no": 33}, {"source_no": "34", "title": "Mrs.", "name": "Dillo Lehlokoe", "organisation": "FIBRETRONIC SALES", "designation": "Chief Executive Officerr", "display_no": 34}, {"source_no": "35", "title": "Ms.", "name": "Pulana Ngwasheng", "organisation": "Zeda Limited (Avis)", "designation": "Chief Information Officer", "display_no": 35}, {"source_no": "36", "title": "Mrs.", "name": "Sophy Moumakoe", "organisation": "Exxaro", "designation": "Chief Information Officer", "display_no": 36}, {"source_no": "37", "title": "Dr.", "name": "Mukovhe Masutha", "organisation": "Centre for Emerging Researchers", "designation": "Head: Research, Strategy and Advisory Services", "display_no": 37}, {"source_no": "38", "title": "Mrs.", "name": "Vuyokazi Menye", "organisation": "SANRAL", "designation": "Chief Information Officer", "display_no": 38}, {"source_no": "39", "title": "Ms.", "name": "Veronica Motloutsi", "organisation": "SEDFA", "designation": "Group Executive", "display_no": 39}, {"source_no": "40", "title": "Ms.", "name": "Makano Mosidi", "organisation": "PIC SOC LTD", "designation": "Chief Technology Officer", "display_no": 40}, {"source_no": "41", "title": "Mr.", "name": "Alfred Mohlala", "organisation": "Department of Public Service and Administration", "designation": "Director: ICT Security", "display_no": 41}, {"source_no": "42", "title": "Mr.", "name": "Butiki Shabangu", "organisation": "Oracle Corporation SA", "designation": "Public Sector Director - Database Platform and Cloud Infrastructure", "display_no": 42}, {"source_no": "43", "title": "Dr.", "name": "Thembekile Mayayise", "organisation": "University of the Witwatersrand", "designation": "Senior Lecturer", "display_no": 43}, {"source_no": "44", "title": "Mr.", "name": "Thato Matsipe", "organisation": "North West Office of the Premier", "designation": "Chief Director", "display_no": 44}, {"source_no": "45", "title": "Ms", "name": "Nazareen Ebrahim", "organisation": "Naz Consulting International", "designation": "Founder and Principal Consultant", "display_no": 45}, {"source_no": "46", "title": "Mr.", "name": "Gaitsewe Lenepa", "organisation": "Beyond Face Value", "designation": "Chief Executive Officerr", "display_no": 46}, {"source_no": "47", "title": "Dr.", "name": "Tshepo Feela", "organisation": "National Planning Commission", "designation": "Commissioner", "display_no": 47}, {"source_no": "48", "title": "Prof.", "name": "Rajesh Mahabeer", "organisation": "Trilord Consulting (Pty) Ltd", "designation": "Chief Executive Officerr", "display_no": 48}, {"source_no": "50", "title": "Mr.", "name": "Zwelithini Gabela", "organisation": "South African Police Service", "designation": "Major General", "display_no": 49}, {"source_no": "51", "title": "Prof.", "name": "Carl Marnewick", "organisation": "University of Johannesburg", "designation": "Professor in IT", "display_no": 50}, {"source_no": "52", "title": "Mr.", "name": "Rendani Ramabulana", "organisation": "Singo Network", "designation": "Director", "display_no": 51}, {"source_no": "53", "title": "Mr.", "name": "Eldrid Jordaan", "organisation": "Eldrid Jordaan Foundation", "designation": "Executive Chairman", "display_no": 52}, {"source_no": "54", "title": "Ms", "name": "Nomvuyiso Batyi", "organisation": "Association of Comms and Technology", "designation": "Chief Executive Officer", "display_no": 53}, {"source_no": "55", "title": "Mr.", "name": "Ali Tlabela", "organisation": "AI Networks Pty Ltd", "designation": "Director & Owner", "display_no": 54}, {"source_no": "56", "title": "Dr.", "name": "Mark Nasila", "organisation": "FirstRand Group", "designation": "Chief Data and Analytics Officer - AI Strategy", "display_no": 55}, {"source_no": "57", "title": "Dr.", "name": "Mmaki Jantjies", "organisation": "Telkom", "designation": "Group Executive Innovation and Transformation", "display_no": 56}, {"source_no": "58", "title": "Ms", "name": "Tumelo Zwane", "organisation": "Special Investigating Unit/ Department of Justice and Constitutional Development", "designation": "Chief Information Officer", "display_no": 57}, {"source_no": "59", "title": "Dr.", "name": "Setumo Mohapi", "organisation": "Impact Tech", "designation": "Director", "display_no": 58}, {"source_no": "60", "title": "Dr.", "name": "Carl Heinz Uys", "organisation": "Cyberspace Protection", "designation": "Co-Founder", "display_no": 59}, {"source_no": "61", "title": "Mr.", "name": "Ashley Sanichar", "organisation": "Oracle", "designation": "Country Leader/MD", "display_no": 60}, {"source_no": "62", "title": "Mr.", "name": "Patrick Le Roux", "organisation": "Venture Labs", "designation": "Founder", "display_no": 61}, {"source_no": "63", "title": "Prof.", "name": "Isolde Lubbe", "organisation": "UJ SCiiS|Dep of Marketing", "designation": "Head of Department", "display_no": 62}, {"source_no": "64", "title": "Ms", "name": "Wendy Tembedza", "organisation": "Webber Wentzel", "designation": "Partner", "display_no": 63}, {"source_no": "65", "title": "Prof.", "name": "Stella Bvuma", "organisation": "UJ SCiiS", "designation": "Director", "display_no": 64}, {"source_no": "66", "title": "Dr.", "name": "Sthembiso Khumalo", "organisation": "UJ SCiiS | IKM", "designation": "Head of Department", "display_no": 65}, {"source_no": "67", "title": "Dr.", "name": "Kagiso Mabe", "organisation": "UJ SCiiS | IKM", "designation": "Deputy Head of Department", "display_no": 66}, {"source_no": "68", "title": "Mr.", "name": "Ronny Mabokela", "organisation": "UJ SCiiS | Technopreneurship Centre", "designation": "Deputy Head of Centre|DHoD", "display_no": 67}, {"source_no": "69", "title": "Mr.", "name": "Rodney de Koch", "organisation": "MIT|UJ", "designation": "Advisory Board Member", "display_no": 68}, {"source_no": "70", "title": "Mr", "name": "Ike Phaahla", "organisation": "Radio2000", "designation": "Host and Communication Specialist", "display_no": 69}, {"source_no": "71", "title": "Adv.", "name": "Dirontsho Mohale", "organisation": "Baakedi Professional Practice", "designation": "CEO , Chief Privacy, Legal & Compliance", "display_no": 70}, {"source_no": "72", "title": "Prof.", "name": "Josef Langerman", "organisation": "UJ SCiiS | AIS & CADS", "designation": "Head of Centre|DHoD", "display_no": 71}, {"source_no": "73", "title": "Ms", "name": "Heather Irvine", "organisation": "Bowmans", "designation": "Regulatory, Technology, Competition Lead and Partner", "display_no": 72}, {"source_no": "74", "title": "Mr.", "name": "Victor Thobakgale", "organisation": "African Rainbow Minerals", "designation": "Technology Operational lead", "display_no": 73}];
-const tbody = document.getElementById('guestRows');
-const search = document.getElementById('search');
-const count = document.getElementById('count');
-function esc(value){return String(value ?? '').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
-function render(list){tbody.innerHTML=list.map((g,i)=>`<tr><td class="no">${i+1}</td><td class="title">${esc(g.title)}</td><td class="name">${esc(g.name)}</td><td>${esc(g.organisation)}</td><td>${esc(g.designation)}</td></tr>`).join(''); count.textContent=`${list.length} delegate${list.length===1?'':'s'} displayed`;}
-search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();const filtered=!q?guests:guests.filter(g=>[g.title,g.name,g.organisation,g.designation].join(' ').toLowerCase().includes(q));render(filtered);});
-render(guests);
-</script>
+  <div class="page-layout">
+
+    <main class="guest-section">
+
+      <div class="top-bar">
+        <div class="logo-card logo-left">
+          <img src="assets/iitpsa.png" alt="IITPSA logo" class="partner-logo">
+        </div>
+
+        <div class="event-heading">
+          <div class="event-label">Public Guest List</div>
+          <h1>SA Artificial Intelligence Unfiltered</h1>
+          <h2>Executive Roundtable</h2>
+          <div class="theme-line">
+            Policies • Ethics • Innovation That Actually Works
+          </div>
+        </div>
+
+        <div class="logo-card logo-right">
+          <img src="assets/Picture3.png" alt="University of Johannesburg logo" class="uj-logo">
+        </div>
+      </div>
+
+      <div class="info-strip">
+        <span>📅 26 May 2026</span>
+        <span>📍 STH Kerzner, UJ Bunting Road Campus</span>
+        <span>🎟 Invitation-only executive engagement</span>
+      </div>
+
+      <p class="note">
+        This list displays confirmed delegates for networking and event participation purposes.
+        Contact details, email addresses, phone numbers and ticket information are not displayed.
+      </p>
+
+      <section class="table-card">
+        <div class="table-header">
+          <strong>Confirmed Delegates</strong>
+          <span class="count-badge" id="guestCount">Loading...</span>
+        </div>
+
+        <div class="search-row">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name, organisation or designation..."
+            oninput="filterGuests()"
+          />
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="no-col">No.</th>
+                <th class="title-col">Title</th>
+                <th class="name-col">Full Name & Surname</th>
+                <th class="org-col">Organisation / Institution</th>
+                <th class="designation-col">Designation</th>
+              </tr>
+            </thead>
+            <tbody id="guestBody">
+              <tr>
+                <td colspan="5">Loading guest list...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="footer-note">
+        SA Artificial Intelligence Unfiltered: Executive Roundtable | School of Consumer Intelligence and Information Systems | University of Johannesburg
+      </p>
+
+    </main>
+
+    <aside class="branding-section">
+      <img src="assets/Picture2.jpg" alt="Event branding">
+    </aside>
+
+  </div>
+
+  <script>
+    let guests = [];
+
+    async function loadGuests() {
+      const guestBody = document.getElementById("guestBody");
+      const guestCount = document.getElementById("guestCount");
+
+      try {
+        const response = await fetch("guests.json");
+
+        if (!response.ok) {
+          throw new Error("Could not load guests.json");
+        }
+
+        guests = await response.json();
+
+        guestCount.textContent = guests.length + " delegates";
+        renderGuests(guests);
+      } catch (error) {
+        guestBody.innerHTML = `
+          <tr>
+            <td colspan="5">
+              Guest list could not be loaded. Please check that guests.json exists in the repository.
+            </td>
+          </tr>
+        `;
+        guestCount.textContent = "Unavailable";
+      }
+    }
+
+    function renderGuests(list) {
+      const guestBody = document.getElementById("guestBody");
+
+      if (!list.length) {
+        guestBody.innerHTML = `
+          <tr>
+            <td colspan="5">No matching delegates found.</td>
+          </tr>
+        `;
+        return;
+      }
+
+      guestBody.innerHTML = list.map((guest, index) => `
+        <tr>
+          <td class="no-col">${index + 1}</td>
+          <td class="title-col">${escapeHtml(guest.title || "")}</td>
+          <td class="name-col">${escapeHtml(guest.name || "")}</td>
+          <td class="org-col">${escapeHtml(guest.organisation || "")}</td>
+          <td class="designation-col">${escapeHtml(guest.designation || "")}</td>
+        </tr>
+      `).join("");
+    }
+
+    function filterGuests() {
+      const query = document.getElementById("searchInput").value.toLowerCase().trim();
+
+      const filtered = guests.filter((guest) => {
+        const text = [
+          guest.title,
+          guest.name,
+          guest.organisation,
+          guest.designation
+        ].join(" ").toLowerCase();
+
+        return text.includes(query);
+      });
+
+      renderGuests(filtered);
+
+      const guestCount = document.getElementById("guestCount");
+      guestCount.textContent = filtered.length + " of " + guests.length + " delegates";
+    }
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    loadGuests();
+  </script>
 </body>
 </html>
